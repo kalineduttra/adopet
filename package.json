@@ -4,7 +4,7 @@
   "description": "Software testing with cypress on a website for registering people interested in adopting a pet",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "php -S localhost:8080",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
