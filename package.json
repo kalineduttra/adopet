@@ -1,0 +1,16 @@
+{
+  "name": "adopet",
+  "version": "1.0.0",
+  "description": "Software testing with cypress on a website for registering people interested in adopting a pet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.1"
+  }
+}
