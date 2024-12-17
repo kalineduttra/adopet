@@ -15,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-          run: npm cy:run
+          run: npm run cy:run
         env:
           VALID_NAME: ${{ vars.VALID_NAME }}
           VALID_DATE: ${{ vars.VALID_DATE }}
