@@ -15,16 +15,16 @@ jobs:
         uses: cypress-io/github-action@v6
         env:
           validName: ${{ secrets.validName }}
-          validDate": ${{ secrets.validDate }}
-          validEmail": ${{ secrets.validEmail }}
-          validCpf": ${{ secrets.validCpf }}
-          validPhoneNumber": ${{ secrets.validPhoneNumber }}
-          validCep": ${{ secrets.validCep }}
-          validCity": ${{ secrets.validCity }}
-          validStreet": ${{ secrets.validStreet }}
-          validNeighborhood": ${{ secrets.validNeighborhood }}
-          validState": ${{ secrets.validState }}
-          validAddressNumber": ${{ secrets.validAddressNumber }}
+          validDate: ${{ secrets.validDate }}
+          validEmail: ${{ secrets.validEmail }}
+          validCpf: ${{ secrets.validCpf }}
+          validPhoneNumber: ${{ secrets.validPhoneNumber }}
+          validCep: ${{ secrets.validCep }}
+          validCity: ${{ secrets.validCity }}
+          validStreet: ${{ secrets.validStreet }}
+          validNeighborhood: ${{ secrets.validNeighborhood }}
+          validState: ${{ secrets.validState }}
+          validAddressNumber: ${{ secrets.validAddressNumber }}
         with:
           start: npm start
           run: npm run cy:run
