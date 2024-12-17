@@ -17,14 +17,14 @@ jobs:
           start: npm start
           run: npm cy:run
         env:
-          VALID_NAME: ${{ secrets.VALID_NAME }}
-          VALID_DATE: ${{ secrets.VALID_DATE }}
-          VALID_EMAIL: ${{ secrets.VALID_EMAIL }}
-          VALID_CPF: ${{ secrets.VALID_CPF }}
-          VALID_PHONE_NUMBER: ${{ secrets.VALID_PHONE_NUMBER }}
-          VALID_CEP: ${{ secrets.VALID_CEP }}
-          VALID_CITY: ${{ secrets.VALID_CITY }}
-          VALID_STREET: ${{ secrets.VALID_STREET }}
-          VALID_NEIGHBORHOOD: ${{ secrets.VALID_NEIGHBORHOOD }}
-          VALID_STATE: ${{ secrets.VALID_STATE }}
-          VALID_ADDRESS_NUMBER: ${{ secrets.VALID_ADDRESS_NUMBER }}
+          VALID_NAME: ${{ vars.VALID_NAME }}
+          VALID_DATE: ${{ vars.VALID_DATE }}
+          VALID_EMAIL: ${{ vars.VALID_EMAIL }}
+          VALID_CPF: ${{ vars.VALID_CPF }}
+          VALID_PHONE_NUMBER: ${{ vars.VALID_PHONE_NUMBER }}
+          VALID_CEP: ${{ vars.VALID_CEP }}
+          VALID_CITY: ${{ vars.VALID_CITY }}
+          VALID_STREET: ${{ vars.VALID_STREET }}
+          VALID_NEIGHBORHOOD: ${{ vars.VALID_NEIGHBORHOOD }}
+          VALID_STATE: ${{ vars.VALID_STATE }}
+          VALID_ADDRESS_NUMBER: ${{ vars.VALID_ADDRESS_NUMBER }}
