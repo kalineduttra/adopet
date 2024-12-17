@@ -14,17 +14,17 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
-          run: npm run cy:run
+          start: npm start & wait-on http://localhost:8080
+          run: npm cy:run
         env:
-            VALID_NAME: ${{ secrets.VALID_NAME }}
-            VALID_DATE: ${{ secrets.VALID_DATE }}
-            VALID_EMAIL: ${{ secrets.VALID_EMAIL }}
-            VALID_CPF: ${{ secrets.VALID_CPF }}
-            VALID_PHONE_NUMBER: ${{ secrets.VALID_PHONE_NUMBER }}
-            VALID_CEP: ${{ secrets.VALID_CEP }}
-            VALID_CITY: ${{ secrets.VALID_CITY }}
-            VALID_STREET: ${{ secrets.VALID_STREET }}
-            VALID_NEIGHBORHOOD: ${{ secrets.VALID_NEIGHBORHOOD }}
-            VALID_STATE: ${{ secrets.VALID_STATE }}
-            VALID_ADDRESS_NUMBER: ${{ secrets.VALID_ADDRESS_NUMBER }}
+          VALID_NAME: ${{ secrets.VALID_NAME }}
+          VALID_DATE: ${{ secrets.VALID_DATE }}
+          VALID_EMAIL: ${{ secrets.VALID_EMAIL }}
+          VALID_CPF: ${{ secrets.VALID_CPF }}
+          VALID_PHONE_NUMBER: ${{ secrets.VALID_PHONE_NUMBER }}
+          VALID_CEP: ${{ secrets.VALID_CEP }}
+          VALID_CITY: ${{ secrets.VALID_CITY }}
+          VALID_STREET: ${{ secrets.VALID_STREET }}
+          VALID_NEIGHBORHOOD: ${{ secrets.VALID_NEIGHBORHOOD }}
+          VALID_STATE: ${{ secrets.VALID_STATE }}
+          VALID_ADDRESS_NUMBER: ${{ secrets.VALID_ADDRESS_NUMBER }}
