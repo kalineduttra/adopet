@@ -14,7 +14,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start & wait-on http://localhost:8080
+          start: npm start
           run: npm cy:run
         env:
           VALID_NAME: ${{ secrets.VALID_NAME }}
