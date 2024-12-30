@@ -20,7 +20,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-          run: npm run test:form-1
+          command: npm run test:form-1
 
   cypress-run-2:
     runs-on: ubuntu-latest
@@ -37,4 +37,4 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-          run: npm run test:form-2
+          command: npm run test:form-2
