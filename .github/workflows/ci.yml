@@ -15,12 +15,16 @@ jobs:
       - name: Write the cypress.env.json file 
         run: |
           echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
-          
-      - name: Install dependencies
-        run: npm install
 
-      - name: Cypress run
+      - name: Cypress run form 1
         uses: cypress-io/github-action@v6
         with:
           start: npm start
-          run: npm run cy:run
+          run: npm run test:form-1
+
+      - name: Cypress run form 2
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm start
+          run: npm run test:form-2
+          
