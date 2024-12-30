@@ -24,15 +24,3 @@ jobs:
         with:
           start: npm start
           run: npm run cy:run
-        env:
-          VALID_NAME: ${{ env.VALID_NAME }}
-          VALID_DATE: ${{ env.VALID_DATE }}
-          VALID_EMAIL: ${{ env.VALID_EMAIL }}
-          VALID_CPF: ${{ env.VALID_CPF }}
-          VALID_PHONE_NUMBER: ${{ env.VALID_PHONE_NUMBER }}
-          VALID_CEP: ${{ env.VALID_CEP }}
-          VALID_CITY: ${{ env.VALID_CITY }}
-          VALID_STREET: ${{ env.VALID_STREET }}
-          VALID_NEIGHBORHOOD: ${{ env.VALID_NEIGHBORHOOD }}
-          VALID_STATE: ${{ env.VALID_STATE }}
-          VALID_ADDRESS_NUMBER: ${{ env.VALID_ADDRESS_NUMBER }}
