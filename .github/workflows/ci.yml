@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      - name: Write the cypress.env.json file 
+        run: |
+          echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
           
       - name: Install dependencies
         run: npm install
