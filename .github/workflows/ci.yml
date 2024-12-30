@@ -16,7 +16,7 @@ jobs:
         run: |
           echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
 
-      - name: Cypress run form 1
+      - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
           start: npm start
@@ -33,7 +33,7 @@ jobs:
         run: |
           echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
 
-      - name: Cypress run form 2
+      - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
           start: npm start
